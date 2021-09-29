@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+
+<head>
+  <!--- META -->
+  <meta charset="utf-8" />
+  <title>Thomas Bach | Portfolio</title>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <meta name="description" content="Site web portfolio de Thomas Bach, étudiant ingénieur en informatique" />
+  <meta name="keywords" content="informatique, etudiant, developpeur, portfolio, thomas, bach, ingenieur" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--- META -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/map.css">
+  <!-- CSS -->
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f30b18f49.js" crossorigin="anonymous"></script>
+  <!-- font -->
+
+</head>
+<!-- head -->
+
+
+<!-- body -->
+
+<body>
+
+  <div class="load-screen">
+    <img src="src/img/logo_rond.png" width="350px" style="margin-top: -150px;">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+
+  <div id="progressbar"></div>
+
+  <!-- cursor-->
+  <div class="inner-cursor"></div>
+  <!-- cursor-->
+
+  <!-- header -->
+  <div class="block">
+    <header class="header" id="header">
+      <a href="index.html" class="header-logo"><img src="src/img/logo_rond.png" width="50px"></a>
+      <div class="toggle-language">
+        <img src="src/img/fr.svg" width="28px" style="margin-top: 15px;">
+        <input type="checkbox" id="checkbox-language" onchange="localizeStrings()">
+        <label class="check" for="checkbox-language"></label>
+        <img src="src/img/en.svg" width="28px">
+      </div>
+      <nav class="header-menu" id="header-menu">
+        <a class="menu-elem" href="#about" id="menuAbout">À propos</a>
+        <a class="menu-elem" href="#works" id="menuWorks">Mes travaux</a>
+        <a class="menu-elem" href="#contact" id="menuContact">Contact</a>
+        <a class="menu-elem" onclick="window.open('CV_stage.pdf')">CV</a>
+      </nav>
+    </header>
+  </div>
+  <!-- header -->
+
+  <!-- banner -->
+  <div class="block">
+    <div class="banner">
+
+      <div class="box">
+        <div class="banner-image">
+          <img src="src/img/bg2.jpg" alt="Montagne avec un couché de soleil" style="z-index: 2;">
+          <div id="particle-container2"></div>
+          <img src="src/img/mountains.png" alt="Moutains" style="position: absolute; z-index: 10; left: 0; top: 0;">
+        </div>
+        <div class="info-photo photo-location">
+          <p><i class="fas fa-map-marker-alt"></i>Giau Pass, Italy</p>
+        </div>
+        <div class="info-photo photo-credit">
+          <p><i class="fas fa-camera"></i> Luca Bravo</p>
+        </div>
+
+      </div>
+      <div class="banner-content">
+        <h1 class="title is-2" id="welcome">Bienvenue sur mon </h1>
+        <h1 class="title is-2" style="color: #08dcb4; margin-top: -20px;">Portfolio.</h1>
+        <div class='icon-scroll'></div>
+        <h2 class="subtitle is-6" id="scrollText" style="margin-top: 50px;">Scrollez pour naviguer</h2>
+      </div>
+    </div>
+  </div>
+  <!-- banner -->
+
+  <div id="particle-container1"></div>
+
+  <!-- À propos -->
+  <div class="block" id="about">
+    <div class="hero is-primary bonjour title-font">
+      <div class="hero-body">
+        <img id="heroPhoto" src="src/img/photo_site.png" alt="Photo de profil" width="150"
+          style="margin-bottom: 10px; margin-top: -20px;">
+        <div class="hello" style="overflow: hidden;">
+          <p class="title" id="heroHello">
+            Bonjour !
+          </p>
+        </div>
+        <div class="hello" style="overflow: hidden; margin-top: 5px;">
+          <p class="subtitle" id="heroIam">
+            Je suis Thomas Bach, étudiant ingénieur en informatique
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <div class="container about title-font">
+      <div class="columns">
+        <div class="column about-single-element">
+          <i class="fas fa-address-card fa-2x icon"></i>
+          <p id="columnAbout" style="text-align: left;">
+            Je suis étudiant en école d'ingénieur, spécialité informatique.
+            Ce domaine est incroyablement vaste et varié,
+            et c'est ce qui me plaît tout particulièrement.
+            J'aime coder mais aussi la créativité, des choses qui sont pour moi très complémentaires.
+            Je recherche actuellement un stage en informatique, n'hésitez pas à me
+            contacter pour plus d'informations.
+          </p>
+
+        </div>
+        <div class="column about-single-element">
+          <i class="fas fa-code fa-2x icon"></i>
+          <p>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/c.svg">
+            <progress class="c" value="0" max="100"></progress>
+          </div>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/java.svg">
+            <progress class="java" value="0" max="100"></progress>
+          </div>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/python.svg">
+            <progress class="python" value="0" max="100"></progress>
+          </div>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/html5.svg">
+            <progress class="html5" value="0" max="100"></progress>
+          </div>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/css.svg">
+            <progress class="css" value="0" max="100"></progress>
+          </div>
+          <div class="container" style="width: 100%;">
+            <img class="language-prog" src="src/img/php.svg">
+            <progress class="php" value="0" max="100"></progress>
+          </div>
+          </p>
+        </div>
+        <div class="column about-single-element">
+          <i class="fas fa-map-marked-alt fa-2x icon"></i>
+          <div>
+            <p id="columnStudy" style="display: inline-block;">J'étudie à </p>
+            <a class="main-color" style="display: inline-block;" href="https://www.polytech-grenoble.fr/">Polytech
+              Grenoble</a>
+          </div>
+          <div class="iframe-container" style="padding-bottom: 80%;">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- À propos -->
+  <div id="works"></div>
+  <!-- Mes travaux -->
+  <div class="block works">
+    <div class="container">
+      <h1 class="subtitle heading-site" id="myWorks">Mes travaux</h1>
+      <div class="notification is-info">
+        <h1 class="title">Bot Twitter</h1>
+        <h2 class="subtitle" id="botDesc">
+          Toutes les semaines le début de la page Wikipédia d'un animal.
+          Bot codé en PHP début 2021, dans le but de développer mes compétences dans ce language,
+          et de mettre en lumière diverses espèces d'animaux parfois bien souvent méconnues.
+        </h2>
+
+        <div class="columns">
+          <div class="column about-single-element">
+            <blockquote class="twitter-tweet">
+              <p lang="fr" dir="ltr">Le Messager sagittaire (Sagittarius serpentarius) est le nom officiel donné par la
+                CINFO à l&#39;espèce d&#39;oiseau le plus souvent appelé Secrétaire ou sous la forme ambiguë de
+                Serpentaire. C&#39;est le seul représentant de la famille des Sagittariidae. ... ⬇️ <a
+                  href="https://t.co/XYhLY8yy1d">pic.twitter.com/XYhLY8yy1d</a></p>&mdash; DailyAnimal Bot 🐾
+              (@DailyBotAnimal) <a
+                href="https://twitter.com/DailyBotAnimal/status/1387412887241625601?ref_src=twsrc%5Etfw">April 28,
+                2021</a>
+            </blockquote>
+
+          </div>
+          <div class="column about-single-element">
+            <blockquote class="twitter-tweet">
+              <p lang="fr" dir="ltr">Le Renard arctique (Vulpes lagopus) ou Renard polaire ou Renard isatis ou Isatis ou
+                Renard bleu, de la famille des canidés, est un renard natif des régions arctiques qui comprend au moins
+                quatre sous-espèces et qui a fait l&#39;objet d&#39;élevage pour s ... ⬇️ <a
+                  href="https://t.co/gjPO2vyVv9">pic.twitter.com/gjPO2vyVv9</a></p>&mdash; DailyAnimal Bot 🐾
+              (@DailyBotAnimal) <a
+                href="https://twitter.com/DailyBotAnimal/status/1388426028046032898?ref_src=twsrc%5Etfw">May 1, 2021</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="column about-single-element">
+            <blockquote class="twitter-tweet">
+              <p lang="fr" dir="ltr">Le Lynx boréal (Lynx lynx), également appelé Lynx d&#39;Eurasie, Lynx commun,
+                Loup-cervier et improprement Lynx d&#39;Europe, est une espèce de félin du genre Lynx. S&#39;il est
+                impropre de l&#39;appeler Lynx d&#39;Europe c&#39;est parce que sa distribution est en fait ... ⬇️ <a
+                  href="https://t.co/Wl73RKGHfL">pic.twitter.com/Wl73RKGHfL</a></p>&mdash; DailyAnimal Bot 🐾
+              (@DailyBotAnimal) <a
+                href="https://twitter.com/DailyBotAnimal/status/1385510996681400323?ref_src=twsrc%5Etfw">April 23,
+                2021</a>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+      <div class="notification is-danger">
+        <h1 class="title">DAAM</h1>
+        <h2 class="subtitle" id="daamDesc">
+          Jeu vidéo développé en Java dans le cadre d'un projet scolaire.
+          Le jeu a été réalisé en 3 semaines par un groupe de 6 étudiants,
+          avec certaines contraintes comme l'utilisation d'automates et la structure MVC (Model View Controller).
+        </h2>
+        <div class="iframe-container">
+          <iframe width="1100" height="600" src="https://www.youtube.com/embed/j0RpQHVYBdU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mes travaux -->
+
+  <!--- Citation -->
+  <div class="block">
+    <div class="hello" style="overflow: hidden;">
+      <div class="hero is-primary citation">
+        <div class="hero-body">
+          <div class="container">
+            <p class="title is-4 title-font">
+              "Life is like a box of chocolates. You never know what you’re gonna get."
+            </p>
+            <p class="subtitle is-6">
+              Forrest Gump
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- Citation -->
+
+  <!--- Contact -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="card" style="width: 70%; margin: auto;">
+        <div class="card-content">
+          <p class="title is-4" id="info" style="margin-bottom: 10px;">
+            Besoin d'informations ? N'hésitez pas à envoyer un mail à
+          </p>
+          <button class="title is-4 mail-button main-color" id="mail"
+            onclick="copyToClipboard('#mail'); showNotif()">thomasbach38@gmail.com</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <ul>
+        <li><a href="#"><i class="fab fa-linkedin fa-2x main-color"></i></a>
+
+        </li>
+        <li><a href="#"><i class="fab fa-twitter fa-2x main-color"></i></a>
+        </li>
+        <li><a href="#"><i class="fab fa-github fa-2x main-color"></i></a>
+
+        </li>
+      </ul>
+    </div>
+    <div class="site-credits">
+      <p>Made with Bulma and Particles.js</p>
+      <p>© Thomas Bach 2021</p>
+    </div>
+
+
+  </footer>
+  <!--- Contact -->
+
+  <!-- Notification -->
+  <div class="box">
+    <div class="notification is-primary copied" id="copyNotif">
+      <button class="delete" onclick="removeNotif()"></button>
+      Mail copied !
+    </div>
+  </div>
+
+  <!-- Notification -->
+
+  <!-- Scroll to top -->
+  <button onclick="topFunction()" id="scrollTopBtn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <!-- Scroll to top -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/lang.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="src/js/anim.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVxcgX-1sRJVeMhhlO4_bZJ8QhNU_td8s&callback=initMap"
+    type="text/javascript"></script>
+  <script type="text/javascript" src="src/js/map.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="src/js/particles.js"></script>
+
+</body>
+<!-- body -->
+
+</html>
