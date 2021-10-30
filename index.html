@@ -62,7 +62,7 @@
         <a class="menu-elem" href="#about" id="menuAbout">À propos</a>
         <a class="menu-elem" href="#works" id="menuWorks">Mes travaux</a>
         <a class="menu-elem" href="#contact" id="menuContact">Contact</a>
-        <a class="menu-elem" onclick="window.open('CV_stage.pdf')">CV</a>
+        <a class="menu-elem" onclick="window.open('CV-BACH.pdf')">CV</a>
       </nav>
     </header>
   </div>
@@ -74,9 +74,9 @@
 
       <div class="box">
         <div class="banner-image">
-          <img src="src/img/bg2.jpg" alt="Montagne avec un couché de soleil" style="z-index: 2;">
+          <img src="src/img/mountains.jpg" alt="Montagne avec un couché de soleil" style="z-index: 2;">
           <div id="particle-container2"></div>
-          <img src="src/img/mountains.png" alt="Moutains" style="position: absolute; z-index: 10; left: 0; top: 0;">
+          <img src="src/img/mountains_transparent.png" alt="Moutains" style="position: absolute; z-index: 10; left: 0; top: 0;">
         </div>
         <div class="info-photo photo-location">
           <p><i class="fas fa-map-marker-alt"></i>Giau Pass, Italy</p>
@@ -169,9 +169,7 @@
             <a class="main-color" style="display: inline-block;" href="https://www.polytech-grenoble.fr/">Polytech
               Grenoble</a>
           </div>
-          <div class="iframe-container" style="padding-bottom: 80%;">
-            <div id="map"></div>
-          </div>
+          <div id="map" style="width: 100%;"></div>
         </div>
       </div>
     </div>
@@ -253,10 +251,10 @@
         <div class="hero-body">
           <div class="container">
             <p class="title is-4 title-font">
-              "Life is like a box of chocolates. You never know what you’re gonna get."
+              “The computing scientist’s main challenge is not to get confused by the complexities of his own making.”
             </p>
             <p class="subtitle is-6">
-              Forrest Gump
+              - Edsger W Dijkstra.
             </p>
           </div>
         </div>
@@ -274,19 +272,18 @@
             Besoin d'informations ? N'hésitez pas à envoyer un mail à
           </p>
           <button class="title is-4 mail-button main-color" id="mail"
-            onclick="copyToClipboard('#mail'); showNotif()">thomasbach38@gmail.com</button>
+            onclick="copyToClipboard('#mail'); showNotif()">thomasbach.contact@gmail.com</button>
         </div>
       </div>
     </div>
 
     <div class="footer-social">
       <ul>
-        <li><a href="#"><i class="fab fa-linkedin fa-2x main-color"></i></a>
-
+        <li><a href="https://linkedin.com/in/thomasbachpro"><i class="fab fa-linkedin fa-2x main-color"></i></a>
         </li>
-        <li><a href="#"><i class="fab fa-twitter fa-2x main-color"></i></a>
+        <li><a href="https://twitter.com/DailyBotAnimal"><i class="fab fa-twitter fa-2x main-color"></i></a>
         </li>
-        <li><a href="#"><i class="fab fa-github fa-2x main-color"></i></a>
+        <li><a href="https://github.com/thomasbachdev"><i class="fab fa-github fa-2x main-color"></i></a>
 
         </li>
       </ul>
@@ -321,9 +318,7 @@
   <script src="src/js/lang.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="src/js/anim.js"></script>
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVxcgX-1sRJVeMhhlO4_bZJ8QhNU_td8s&callback=initMap"
-    type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
   <script type="text/javascript" src="src/js/map.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

@@ -12,7 +12,7 @@ particlesJS("particle-container1",
                 "value": "#35b698"
             },
             "shape": {
-                "type": "circle",
+                "type": "triangle",
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
@@ -55,7 +55,7 @@ particlesJS("particle-container1",
             },
             "move": {
                 "enable": true,
-                "speed": 4,
+                "speed": 2,
                 "direction": "none",
                 "random": true,
                 "straight": false,
