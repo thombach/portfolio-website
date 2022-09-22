@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 
     <!-- CSS -->
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
     <!-- CSS -->
   </head>
   <!-- head -->
@@ -28,32 +28,124 @@
   <!-- body -->
   <body class="font-body">
     <!-- header -->
-    <header class="absolute">
-      <nav class="text-xl leading-6 font-semibold text-slate-700 text-white py-4 px-8">
-        <a href="">Header</a>
+    <header class="flex flex-row justify-between absolute py-4 px-8 w-full">
+      <a href="./index.html">
+        <img
+          src="./src/img/logo_rond.png"
+          alt="Thomas Bach's logo"
+          width="50px"
+        />
+      </a>
+      <nav
+        class="flex items-center text-xl leading-6 font-semibold text-slate-700 text-white"
+      >
+        <ul class="flex flex-row space-x-8">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Work</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
       </nav>
-
     </header>
     <!-- header -->
 
     <!-- main -->
-    <main>
-      <div class="flex items-center justify-center h-screen w-full">
-        <img class="object-cover w-full h-full" src="./src/img/home-background.jpg" alt="Reflecting lake with autumn mountains with orange trees in the background">
-        <h1 class="absolute text-6xl font-extrabold tracking-tight text-white">
-          Hello world !
-        </h1>
+    <main class="flex flex-col items-center justify-center">
+
+      <!-- home -->
+      <div class="h-screen w-full">
+        <img
+          class="object-cover w-full h-full absolute -z-10"
+          src="./src/img/home-background.jpg"
+          alt="Reflecting lake with autumn mountains with orange trees in the background"
+        />
+        <div class="flex flex-col max-w-5xl text-white font-bold tracking-tight px-12">
+          <h1 class="text-6xl">
+            Hello !
+          </h1>
+          <h2 class="text-3xl">
+            I'm Thomas Bach, a 
+          </h2>
+        </div>
+        
+      </div>
+      <!-- home -->
+      
+      <div class="flex flex-col justify-start max-w-5xl px-12">
+
+        <!-- about -->
+        <div class="py-8">
+          <h3 class="text-3xl font-extrabold tracking-tight">About</h3>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt
+            suscipit veritati
+          </p>
+        </div>
+        <!-- about -->
+  
+        <!-- skills and tools -->
+        <div class="py-8">
+          <h3 class="text-3xl font-extrabold tracking-tight">Skills</h3>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt
+            suscipit veritatis magnam nisi explicabo obcaecati necessitatibus,
+            ullam velit! Expedita voluptates incidunt dolor voluptatum eligendi
+            adipisci odio voluptatibus provident praesentium!
+          </p>
+        </div>
+        <!-- skills and tools -->
+  
+        <!-- work -->
+        <div class="py-8">
+          <h3 class="text-3xl font-extrabold tracking-tight">Work</h3>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt
+            suscipit veritatis magnam nisi explicabo obcaecati necessitatibus,
+            ullam velit! Expedita voluptates incidunt dolor voluptatum eligendi
+            adipisci odio voluptatibus provident praesentium!
+          </p>
+        </div>
+        <!-- work -->
+  
+        <!-- contact -->
+        <div class="py-8">
+          <h3 class="text-3xl font-extrabold tracking-tight">Get in touch</h3>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt
+            suscipit veritatis magnam nisi explicabo obcaecati necessitatibus,
+            ullam velit! Expedita voluptates incidunt dolor voluptatum eligendi
+            adipisci odio voluptatibus provident praesentium!
+          </p>
+        </div>
+        <!-- contact -->
       </div>
       
-      <div class="p-8 h-50 bg-rose-600">
-
-      </div>
     </main>
     <!-- main -->
 
     <!-- footer -->
     <footer>
-
+      <div class="flex items-center justify-center h-96 w-full">
+        <img
+          class="object-cover object-top w-full h-full"
+          src="./src/img/footer.jpg"
+          alt="Mountains painted with shades of blue"
+        />
+      </div>
+      <div
+        class="footer-container flex flex-col items-center justify-center w-full p-12 text-white"
+      >
+        <p>Made with ❤️ by Thomas Bach</p>
+        <p>© 2022 - 2023</p>
+      </div>
     </footer>
     <!-- footer -->
   </body>
