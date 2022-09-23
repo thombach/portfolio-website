@@ -7,3 +7,9 @@
 .footer-container {
     background-color: #26A69A;
 }
+
+@layer components {
+    .letter-bounce {
+      @apply transition ease-in-out hover:-translate-y-3 duration-200;
+    }
+  }
