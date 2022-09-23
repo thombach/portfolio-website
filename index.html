@@ -27,6 +27,7 @@
 
   <!-- body -->
   <body class="font-body">
+
     <!-- header -->
     <header class="flex flex-row justify-between absolute py-4 px-8 w-full">
       <a href="./index.html">
@@ -90,7 +91,7 @@
         class="flex flex-col justify-start max-w-5xl p-12 space-y-12 text-zinc-700"
       >
         <!-- about -->
-        <div id="about">
+        <section id="about">
           <h3
             class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full"
           >
@@ -100,11 +101,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             sunt suscipit veritati
           </p>
-        </div>
+        </section>
         <!-- about -->
 
         <!-- skills and tools -->
-        <div id="skills">
+        <section id="skills">
           <h3 class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full">Skills 🔧</h3>
           <p class="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -113,11 +114,11 @@
             voluptatum eligendi adipisci odio voluptatibus provident
             praesentium!
           </p>
-        </div>
+        </section>
         <!-- skills and tools -->
 
         <!-- work -->
-        <div id="work">
+        <section id="work">
           <h3 class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full">Work 🚀</h3>
           <p class="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -126,11 +127,11 @@
             voluptatum eligendi adipisci odio voluptatibus provident
             praesentium!
           </p>
-        </div>
+        </section>
         <!-- work -->
 
         <!-- contact -->
-        <div id="contact">
+        <section id="contact">
           <h3 class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full">
             Get in touch 📨
           </h3>
@@ -141,11 +142,14 @@
             voluptatum eligendi adipisci odio voluptatibus provident
             praesentium!
           </p>
-        </div>
+        </section>
         <!-- contact -->
       </div>
     </main>
     <!-- main -->
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-teal-400 text-white text-3xl font-bold">&uarr;</button>
 
     <!-- footer -->
     <footer>
@@ -192,6 +196,10 @@
       </div>
     </footer>
     <!-- footer -->
+
+    <!-- scripts -->
+    <script src="./src/js/main.js"></script>
+    <!-- scripts -->
   </body>
   <!-- body -->
 </html>
