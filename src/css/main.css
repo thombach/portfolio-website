@@ -8,6 +8,44 @@
     background-color: #26A69A;
 }
 
+.icon-scroll {
+    width: 20px;
+    height: 40px;
+    box-shadow: inset 0 0 0 2px white;
+    border-radius: 25px;
+}
+
+.icon-scroll:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    top: 6px;
+    left: 6px;
+    border-radius: 4px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll{
+    0%{
+      opacity: 1;
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    50%{
+      opacity: 0;
+      transform: translateY(20px);
+      }
+    100%{
+      opacity: 0;
+      transform: translateY(20px);
+      }
+  }
+
 @layer components {
     .letter-bounce {
       @apply transition ease-in-out hover:-translate-y-3 duration-200;
