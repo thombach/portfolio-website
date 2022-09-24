@@ -56,6 +56,6 @@
     }
 
     .skill-container {
-      @apply flex flex-col w-24 h-24 justify-center items-center space-y-2;
+      @apply flex flex-col w-24 h-24 justify-center items-center space-y-2 transition duration-150;
     }
   }
