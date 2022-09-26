@@ -62,7 +62,7 @@
       <!-- home -->
       <div class="flex flex-col justify-end items-center h-screen w-full">
         <img
-          class="object-cover w-full h-full absolute -z-10"
+          class="object-cover w-full h-full absolute -z-20"
           src="./src/img/home-background.jpg"
           alt="Reflecting lake with autumn mountains with orange trees in the background"
         />
@@ -74,7 +74,7 @@
             ><span class="letter-bounce">e</span
             ><span class="letter-bounce">l</span
             ><span class="letter-bounce">l</span
-            ><span class="letter-bounce">o</span>
+            ><span class="letter-bounce">o</span>&nbsp
             <span class="letter-bounce">!</span>
           </h1>
           <h2 class="text-3xl mt-4">
@@ -91,14 +91,16 @@
       <!-- home -->
 
       <div
-        class="flex flex-col justify-start max-w-5xl p-12 space-y-24 text-slate-700"
+        class="flex flex-col justify-start max-w-5xl px-12 pb-24 space-y-24 text-slate-700"
       >
+        <div id="contrails" class="absolute w-full h-screen left-0 -z-10"></div>
+
         <!-- about -->
         <section id="about">
           <h3
             class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full"
           >
-            About 👋
+            👋 About
           </h3>
           <div
             class="flex flex-col sm:flex-row justify-center items-center mt-6"
@@ -130,7 +132,7 @@
           <h3
             class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full"
           >
-            Skills 🔧
+            🔧 Skills
           </h3>
           <p class="mt-6">
             Over the <span class="font-bold">projects</span> I have worked on, I
@@ -139,10 +141,10 @@
               class="underline decoration-teal-400 decoration-2 underline-offset-4"
               >developper toolkit</span
             >
-            with all the <span class="font-bold">skills</span
-            >, <span class="font-bold">tools</span
-            > and <span class="font-bold">technologies</span> that I have learnt. Here are those I am working often
-            with :
+            with all the <span class="font-bold">skills</span>,
+            <span class="font-bold">tools</span> and
+            <span class="font-bold">technologies</span> that I have learnt. Here
+            are those I am working often with :
           </p>
           <div class="flex justify-center mt-6">
             <div
@@ -215,12 +217,26 @@
           <h3
             class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full"
           >
-            Work 🚀
+            🚀 Work
           </h3>
-          <p class="mt-6">Here is a selection of projects I have done.</p>
+          <p class="mt-6">
+            Here is a selection of <span class="font-bold">projects</span> I
+            have worked on.
+          </p>
           <div class="flex flex-col space-y-24 mt-12">
-            <div class="flex flex-col sm:flex-row justify-center items-center">
-              <div class="bg-teal-400 w-64 h-64"></div>
+            <div class="flex flex-col sm:flex-row justify-center items-center shadow-lg p-4 hover:scale-105 transition duration-150">
+              <div>
+                <iframe
+                  width="420"
+                  height="280"
+                  src="https://www.youtube.com/embed/m5xTpISakEc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
               <div
                 class="flex flex-col items-center sm:items-start pt-8 sm:pl-8 sm:pt-0"
               >
@@ -237,14 +253,28 @@
                   incidunt dolor voluptatum eligendi adipisci odio voluptatibus
                   provident praesentium!
                 </p>
-                <a href="" class="btn-primary">See more</a>
+                <a
+                  href="https://www.youtube.com/watch?v=m5xTpISakEc"
+                  class="btn-primary"
+                  >👉 See more</a
+                >
               </div>
             </div>
 
             <div
-              class="flex flex-col sm:flex-row-reverse justify-center items-center sm:text-right"
+              class="flex flex-col sm:flex-row-reverse justify-center items-center sm:text-right shadow-lg p-4 hover:scale-105 transition duration-150"
             >
-              <div class="bg-teal-400 w-64 h-64"></div>
+              <div>
+                <iframe
+                  width="420"
+                  height="280"
+                  src="https://www.youtube.com/embed/j0RpQHVYBdU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
               <div
                 class="flex flex-col items-center sm:items-end pt-8 sm:pr-8 sm:pt-0"
               >
@@ -261,12 +291,21 @@
                   incidunt dolor voluptatum eligendi adipisci odio voluptatibus
                   provident praesentium!
                 </p>
-                <a href="" class="btn-primary"> See more </a>
+                <a
+                  href="https://www.youtube.com/watch?v=j0RpQHVYBdU"
+                  class="btn-primary"
+                  >👉 See more
+                </a>
               </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row justify-center items-center">
-              <div class="bg-teal-400 w-64 h-64"></div>
+            <div class="flex flex-col sm:flex-row justify-center items-center shadow-lg p-4 hover:scale-105 transition duration-150">
+              <img
+                src="./src/img/project-robin.jpg"
+                width="420"
+                height="236"
+                alt="Project Robin's photo composition"
+              />
               <div
                 class="flex flex-col items-center sm:items-start pt-8 sm:pl-8 sm:pt-0"
               >
@@ -283,7 +322,44 @@
                   incidunt dolor voluptatum eligendi adipisci odio voluptatibus
                   provident praesentium!
                 </p>
-                <a href="" class="btn-primary"> See more </a>
+                <a
+                  href="https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/21-22/03/docs/-/blob/main/report_project_robin.pdf"
+                  class="btn-primary"
+                  >👉 See more
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row-reverse justify-center items-center sm:text-right shadow-lg p-4 hover:scale-105 transition duration-150"
+            >
+              <img
+                src="./src/img/contrails.gif"
+                width="420"
+                height="236"
+                alt="Project Robin's photo composition"
+              />
+              <div
+                class="flex flex-col items-center sm:items-end pt-8 sm:pr-8 sm:pt-0"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia sunt suscipit veritatis magnam nisi explicabo
+                  obcaecati necessitatibus, ullam velit! Expedita voluptates
+                  incidunt dolor voluptatum eligendi adipisci odio voluptatibus
+                  provident praesentium!
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia sunt suscipit veritatis magnam nisi explicabo
+                  obcaecati necessitatibus, ullam velit! Expedita voluptates
+                  incidunt dolor voluptatum eligendi adipisci odio voluptatibus
+                  provident praesentium!
+                </p>
+                <a
+                  href="https://github.com/thomasbachdev/contrails.js"
+                  class="btn-primary"
+                  >👉 See more
+                </a>
               </div>
             </div>
           </div>
@@ -295,7 +371,7 @@
           <h3
             class="text-3xl inline-block relative font-extrabold tracking-tight before:content-[''] before:absolute before:rounded-sm before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full"
           >
-            Get in touch 📨
+            📨 Get in touch
           </h3>
           <p class="mt-6">
             Any <span class="font-bold">question</span>,
@@ -317,7 +393,7 @@
       id="to-top-button"
       onclick="goToTop()"
       title="Go To Top"
-      class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-teal-400 hover:bg-teal-500 text-white text-3xl font-bold"
+      class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-teal-400 hover:bg-teal-500 active:bg-teal-600 text-white text-3xl font-bold"
     >
       &uarr;
     </button>
@@ -373,6 +449,7 @@
 
     <!-- scripts -->
     <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/contrails.js"></script>
     <!-- scripts -->
   </body>
   <!-- body -->

@@ -1,6 +1,7 @@
 let toTopButton = document.getElementById("to-top-button");
 let skillsGrid = document.getElementById("skills-grid");
 document.addEventListener("DOMContentLoaded", main);
+document.cookie = "SameSite=Lax";
 
 function main() {
   // Handle hovering the skills grid
