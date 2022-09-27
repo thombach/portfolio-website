@@ -4,7 +4,7 @@
     "background_color": "#FFFFFF",
     "planes": {
         "speed": 1,
-        "size": 15,
+        "size": 18,
         "number": 2,
         "double_contrails": true,
         "contrails_spacing": 0.3
@@ -13,9 +13,9 @@
         "size": 0.2,
         "lifespan": 600,
         "number": 600,
-        "color": "#e0f2fe",
+        "color": "#bae6fd",
         "move_probability": 0.2
     },
     "fps": 60,
-    "canvas_offset": 200
+    "canvas_offset": 100
 }

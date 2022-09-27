@@ -1,61 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .footer-container {
-    background-color: #26A69A;
+  background-color: #26a69a;
 }
 
 .icon-scroll {
-    width: 20px;
-    height: 40px;
-    box-shadow: inset 0 0 0 2px white;
-    border-radius: 25px;
+  width: 20px;
+  height: 40px;
+  box-shadow: inset 0 0 0 2px white;
+  border-radius: 25px;
 }
 
 .icon-scroll:before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: white;
-    top: 6px;
-    left: 6px;
-    border-radius: 4px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: scroll;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  top: 6px;
+  left: 6px;
+  border-radius: 4px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
 }
-@keyframes scroll{
-    0%{
-      opacity: 1;
-    }
-    40%{
-        opacity: 1;
-        transform: translateY(20px);
-    }
-    50%{
-      opacity: 0;
-      transform: translateY(20px);
-      }
-    100%{
-      opacity: 0;
-      transform: translateY(20px);
-      }
+@keyframes scroll {
+  0% {
+    opacity: 1;
   }
+  40% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
 
 @layer components {
-    .letter-bounce {
-      @apply transition ease-in-out hover:-translate-y-3 duration-200;
-    }
-
-    .btn-primary {
-      @apply py-1 px-4 mt-4 bg-teal-400 text-white font-bold rounded-md shadow-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-75 w-fit;
-    }
-
-    .skill-container {
-      @apply flex flex-col w-24 h-24 justify-center items-center space-y-2 transition duration-150;
-    }
+  .letter-bounce {
+    @apply transition ease-in-out hover:-translate-y-3 duration-200;
   }
+
+  .btn-primary {
+    @apply py-1 px-4 mt-4 bg-teal-400 text-white font-bold rounded-md shadow-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-75 w-fit;
+  }
+
+  .skill-container {
+    @apply flex flex-col w-24 h-24 justify-center items-center space-y-2 transition duration-150;
+  }
+
+  .text-underlined {
+    @apply underline decoration-teal-400 decoration-[2.5px] underline-offset-4;
+  }
+}
