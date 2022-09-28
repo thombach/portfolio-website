@@ -46,6 +46,28 @@
   }
 }
 
+.click-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 25px;
+  border-color: #2dd4bf;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 5000;
+  transform: scale(0);
+  transform-origin: center;
+  animation: clickAnim 1s ease-out;
+}
+
+@keyframes clickAnim {
+  50%, 100%{
+      transform: scale(1.2);
+      border-width: 0px;
+      opacity: 0.1;
+  }
+}
+
 @layer components {
   .letter-bounce {
     @apply transition ease-in-out hover:-translate-y-3 duration-200;

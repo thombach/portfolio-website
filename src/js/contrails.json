@@ -11,7 +11,7 @@
     },
     "particles": {
         "size": 0.2,
-        "lifespan": 600,
+        "lifespan": 400,
         "number": 600,
         "color": "#bae6fd",
         "move_probability": 0.2

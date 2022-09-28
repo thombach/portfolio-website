@@ -1,5 +1,6 @@
 let toTopButton = document.getElementById("to-top-button");
 let skillsGrid = document.getElementById("skills-grid");
+window.addEventListener('click', e => clickAnim(e));
 document.addEventListener("DOMContentLoaded", main);
 document.cookie = "SameSite=Lax";
 
@@ -38,6 +39,23 @@ function skillsOver() {
   }
 }
 
+function clickAnim(e) {
+    const circle = document.createElement('div');
+    circle.className = 'click-circle';
+    circle.style.top = `${e.pageY - 20}px`;
+    circle.style.left = `${e.pageX - 20}px`;
+    document.body.appendChild(circle);
+  
+    setTimeout(() => {
+        circle.remove();
+    }, 1500)
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function goToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 // When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function () {
   if (
@@ -49,8 +67,3 @@ window.onscroll = function () {
     toTopButton.classList.add("hidden");
   }
 };
-
-// When the user clicks on the button, scroll to the top of the document
-function goToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
