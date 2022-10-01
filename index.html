@@ -27,42 +27,44 @@
 
   <!-- body -->
   <body class="font-body text-justify">
-    <!-- header -->
-    <header class="flex flex-row justify-between absolute py-4 px-8 w-full">
-      <a href="./index.html">
-        <img
-          src="./src/img/logo_rond.png"
-          alt="Thomas Bach's logo"
-          width="50px"
-        />
-      </a>
-      <nav
-        class="flex items-center text-xl leading-6 font-semibold text-slate-700 text-white"
-      >
-        <ul class="flex flex-row space-x-8">
-          <li class="hidden sm:block hover:text-teal-400">
-            <a href="#about">About</a>
-          </li>
-          <li class="hidden sm:block hover:text-teal-400">
-            <a href="#work">Work</a>
-          </li>
-          <li class="hidden sm:block hover:text-teal-400">
-            <a href="./CV-BACH.pdf">Resume</a>
-          </li>
-          <li class="hover:text-teal-400">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header -->
-
     <!-- main -->
     <main class="flex flex-col items-center justify-center">
+      <!-- header -->
+      <div
+        class="flex flex-row justify-between absolute py-4 px-8 w-full top-0"
+      >
+        <a href="./index.html">
+          <img
+            src="./src/img/logo_rond.png"
+            alt="Thomas Bach's logo"
+            width="50px"
+          />
+        </a>
+        <nav
+          class="flex items-center text-xl leading-6 font-semibold text-slate-700 text-white"
+        >
+          <ul class="flex flex-row space-x-8">
+            <li class="hidden sm:block hover:text-teal-400">
+              <a href="#about">About</a>
+            </li>
+            <li class="hidden sm:block hover:text-teal-400">
+              <a href="#work">Work</a>
+            </li>
+            <li class="hidden sm:block hover:text-teal-400">
+              <a href="./CV-BACH.pdf">Resume</a>
+            </li>
+            <li class="hover:text-teal-400">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- header -->
+
       <!-- home -->
       <div class="flex flex-col justify-end items-center h-screen w-full">
         <img
-          class="object-cover w-full h-full absolute -z-20"
+          class="object-cover w-full h-full absolute -z-20 top-0"
           src="./src/img/home-background.jpg"
           alt="Reflecting lake with autumn mountains with orange trees in the background"
         />
