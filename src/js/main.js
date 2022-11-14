@@ -55,7 +55,7 @@ function clickAnim(e) {
 // Typing text animation
 function typingAnim(event) {
   // array with texts to type in typewriter
-  var dataText = ["a computer science engineering student. 💻"];
+  var dataText = ["a computer science engineering student.💻"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -75,7 +75,7 @@ function typingAnim(event) {
     // text finished, call callback if there is a callback function
     else if (typeof fnCallback == "function") {
       // call callback after timeout
-      setTimeout(fnCallback, 700);
+      setTimeout(fnCallback, 2000);
     }
   }
   // start a typewriter animation for a text in the dataText array
