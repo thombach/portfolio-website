@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.profile-photo {
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  border-radius: 50%;
+}
+
 .footer-container {
   background-color: #26a69a;
 }
@@ -61,10 +67,11 @@
 }
 
 @keyframes clickAnim {
-  50%, 100%{
-      transform: scale(1.2);
-      border-width: 0px;
-      opacity: 0.1;
+  50%,
+  100% {
+    transform: scale(1.2);
+    border-width: 0px;
+    opacity: 0.1;
   }
 }
 
@@ -73,7 +80,7 @@
 }
 
 .cursor {
-  border-right: .15em solid;
+  border-right: 0.15em solid;
   border-color: #2dd4bf;
   animation: caret 1s steps(1) infinite;
 }
