@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.background-img {
+  background-image: url("../src/img/home-background.jpg");
+}
 .profile-photo {
   -webkit-shape-outside: circle();
   shape-outside: circle();
