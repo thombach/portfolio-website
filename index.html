@@ -67,9 +67,35 @@
       <!-- home -->
       <div class="flex flex-col justify-end items-center h-screen w-full">
         <div
-          class="bg-[url('../src/img/home-background.jpg')] bg-cover w-full h-full absolute -z-20 bottom-0"
-          alt="Reflecting lake with autumn mountains with orange trees in the background"
-        /></div>
+          class="bg-[url('../src/img/home-background.jpg')] bg-cover bg-center w-full h-full absolute -z-20 top-0"
+          alt="Reflecting lake surrounded by autumn mountains with orange trees in the background"
+        >
+          <div
+            class="water-filter bg-[url('../src/img/home-background-water.png')] bg-cover bg-center w-full h-full absolute -z-20 top-0"
+          ></div>
+        </div>
+        <svg class="absolute">
+          <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence
+              id="water-filter"
+              numOctaves="3"
+              seed="2"
+              baseFrequency="0.02 0.5"
+            ></feTurbulence>
+            <feDisplacementMap
+              scale="20"
+              in="SourceGraphic"
+            ></feDisplacementMap>
+            <animate
+              xlink:href="#water-filter"
+              attributeName="baseFrequency"
+              dur="60s"
+              keyTimes="0;1"
+              values="0.02 0.08;0.06 0.08"
+              repeatCount="indefinite"
+            ></animate>
+          </filter>
+        </svg>
         <div
           class="flex flex-col justify-start max-w-5xl w-full text-white px-12 py-64 m-auto"
         >

@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 
-.background-img {
-  background-image: url("../src/img/home-background.jpg");
+.water-filter {
+  filter: url("#turbulence");
 }
 .profile-photo {
   -webkit-shape-outside: circle();
