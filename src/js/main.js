@@ -15,7 +15,7 @@ function skillsLeave() {
   // For every skill remove blur and hide text
   for (let child of skillsGrid.children) {
     child.classList.remove("blur");
-    child.classList.remove("scale-110");
+    child.classList.remove("scale-125");
     child.getElementsByTagName("span")[0].classList.add("hidden");
   }
 }
@@ -27,14 +27,14 @@ function skillsOver() {
     if (!child.matches(":hover")) {
       child.classList.add("blur");
       child.classList.remove("z-10");
-      child.classList.remove("scale-110");
+      child.classList.remove("scale-125");
       child.getElementsByTagName("span")[0].classList.add("hidden");
     }
     // If hovering remove blur and add text
     else {
       child.classList.remove("blur");
       child.classList.add("z-10");
-      child.classList.add("scale-110");
+      child.classList.add("scale-125");
       child.getElementsByTagName("span")[0].classList.remove("hidden");
     }
   }
