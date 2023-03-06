@@ -1,7 +1,9 @@
 let toTopButton = document.getElementById("to-top-button");
 let skillsGrid = document.getElementById("skills-grid");
+let sectionTitles = document.getElementsByClassName("section-title");
 window.addEventListener("click", (e) => clickAnim(e));
 document.addEventListener("DOMContentLoaded", main);
+document.addEventListener("scroll", (e) => titlesAnim(e));
 document.cookie = "SameSite=Lax";
 
 function main() {
@@ -40,6 +42,7 @@ function skillsOver() {
   }
 }
 
+// Blue circle animation on click
 function clickAnim(e) {
   const circle = document.createElement("div");
   circle.className = "click-circle";
@@ -50,6 +53,29 @@ function clickAnim(e) {
   setTimeout(() => {
     circle.remove();
   }, 1500);
+}
+
+// Titles animation on scroll
+function titlesAnim(e) {
+  let currentSection = null;
+  for (const title of sectionTitles) {
+    if (
+      document.documentElement.scrollTop >=
+        title.offsetTop - window.innerHeight / 2 &&
+      document.documentElement.scrollTop <
+        title.offsetTop + window.innerHeight / 2
+    ) {
+      if (currentSection !== null) {
+        currentSection.classList.remove("before:w-full");
+      }
+      currentSection = title;
+    } else {
+      title.classList.remove("before:w-full");
+    }
+  }
+  if (currentSection !== null) {
+    currentSection.classList.add("before:w-full");
+  }
 }
 
 // Typing text animation
