@@ -81,7 +81,7 @@ function titlesAnim(e) {
 // Typing text animation
 function typingAnim(event) {
   // array with texts to type in typewriter
-  var dataText = ["a computer science engineering student.💻"];
+  var dataText = ["a software engineer.💻"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
