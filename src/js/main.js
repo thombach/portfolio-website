@@ -81,7 +81,7 @@ function titlesAnim(e) {
 // Typing text animation
 function typingAnim(event) {
   // array with texts to type in typewriter
-  var dataText = ["a software engineer.💻"];
+  var dataText = ["a passionate software engineer. 💻", "a mountain lover. ⛰️", "a continuous learner. 📚", ];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -101,7 +101,7 @@ function typingAnim(event) {
     // text finished, call callback if there is a callback function
     else if (typeof fnCallback == "function") {
       // call callback after timeout
-      setTimeout(fnCallback, 2000);
+      setTimeout(fnCallback, 3000);
     }
   }
   // start a typewriter animation for a text in the dataText array
@@ -109,7 +109,7 @@ function typingAnim(event) {
     if (typeof dataText[i] == "undefined") {
       setTimeout(function () {
         StartTextAnimation(0);
-      }, 6000);
+      }, 100);
     }
     // check if dataText[i] exists
     else if (i < dataText[i].length) {
