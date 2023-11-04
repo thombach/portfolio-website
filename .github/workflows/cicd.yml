@@ -17,25 +17,27 @@ jobs:
     environment:
       name: vps
       url: ${{ vars.URL }}
-    runs-on: ubuntu-latest
+    runs-on: vps
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Copy repository contents via scp
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          source: "."
-          target: ${{ secrets.TARGET_FOLDER }}
-      - name: Deploy script
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          password: ${{ secrets.PASSWORD }}
-          script: cd ${{ secrets.TARGET_FOLDER }} && ./deploy.sh
+      - name: Test
+        run: pwd && cd ${{ secrets.TARGET_FOLDER }}
+      # - name: Copy repository contents via scp
+      #   uses: appleboy/scp-action@master
+      #   with:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     port: ${{ secrets.PORT }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     source: "."
+      #     target: ${{ secrets.TARGET_FOLDER }}
+      # - name: Deploy script
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     port: ${{ secrets.PORT }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     password: ${{ secrets.PASSWORD }}
+      #     script: cd ${{ secrets.TARGET_FOLDER }} && ./deploy.sh
