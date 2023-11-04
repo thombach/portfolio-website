@@ -24,4 +24,4 @@ jobs:
       - name: Deploy script
         env:
           target_folder: ${{ secrets.TARGET_FOLDER }}
-        run: ./deploy.sh
+        run: bash deploy.sh
