@@ -1,4 +1,4 @@
-name: Deploy files to VPS
+name: CI/CD
 
 on:
   # Runs on pushes targeting the default branch
@@ -30,8 +30,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
         with:
           source: "."
-          target: "${{ secrets.TARGET_FOLDER }}"
-      - name: Build tailwind
+          target: ${{ secrets.TARGET_FOLDER }}
+      - name: Deploy script
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
