@@ -19,11 +19,23 @@ jobs:
       url: ${{ vars.URL }}
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      # - name: Checkout
-      #   uses: actions/checkout@v3
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Executing remote command
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          script: pwd
+      # - name: Copy repository contents via scp
+      #   uses: appleboy/scp-action@master
+      #   env:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     port: ${{ secrets.PORT }}
+      #     key: ${{ secrets.SSH_KEY }}
       #   with:
-      #     # Upload entire repository
-      #     path: '.'
+      #     source: "."
+      #     target: "/var/www/thomasbach.fr/public_html"
