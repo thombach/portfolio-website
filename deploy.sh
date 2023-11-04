@@ -2,12 +2,12 @@
 set -e
 
 # Clean old files
-rm -rf $target_folder/*
+sudo rm -rf $target_folder/*
 
 # Copy new files to target folder
-cp -r * $target_folder
+sudo cp -r * $target_folder
 
 # Build CSS
 cd $target_folder
-npm i
+sudo npm i
 npm run build-css
