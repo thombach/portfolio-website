@@ -1,0 +1,29 @@
+name: Deploy files to VPS
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.repository }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: vps
+      url: ${{ vars.URL }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      # - name: Checkout
+      #   uses: actions/checkout@v3
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v2
+      #   with:
+      #     # Upload entire repository
+      #     path: '.'
