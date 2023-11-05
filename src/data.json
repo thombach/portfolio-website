@@ -123,6 +123,23 @@
       }
     ]
   },
+  "certifications": {
+    "intro": "Never stop <span class='font-bold'>learning !</span>",
+    "list": [
+      {
+        "name": "Professional Scrum Developer (PSD 1)",
+        "src": "./src/img/logo-scrum-developer.png"
+      },
+      {
+        "name": "AWS Cloud Practitioner",
+        "src": "./src/img/logo-aws-practitioner.png"
+      },
+      {
+        "name": "Cloud Computing Foundations",
+        "src": "./src/img/logo-duke.png"
+      }
+    ]
+  },
   "work": {
     "intro": "Here is a selection of <span class='font-bold'>projects</span> I have worked on. Some of my them are available on my <a class='text-link' href='https://github.com/thomasbachdev' >GitHub</a >.",
     "projects": [
