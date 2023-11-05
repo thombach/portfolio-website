@@ -1,0 +1,194 @@
+{
+  "home": {
+    "sentences": [
+      "a passionate software engineer. 💻",
+      "a mountain lover. 🏔️",
+      "a lifelong learner. 📚",
+      "a DevOps enthusiast. ⚙️"
+    ]
+  },
+  "about": {
+    "p1": "I love to combine both <span class='font-bold'>technology</span> and <span class='font-bold'>creativity</span> to create tools and software that will <span class='font-bold'>help people</span> in their job and make their life easier. As a good team player and a hard worker, I want to solve complex problems and work on <span class='font-bold'>exciting projects</span>. I'm a generalist, and I'm passionate about constantly <span class='font-bold'>learning</span> new things in various fields.",
+    "p2": "I have a <span class='font-bold'>computer science</span> engineering degree from <a class='text-link' href='https://www.polytech-grenoble.fr' >Polytech</a >, an engineering school based in <span class='font-bold'>Grenoble</span> (in the French Alps). Over the courses and the projects I have participated in, I have learned several <span class='font-bold'>programming languages</span> and aspects of computer science, which gave me a <span class='font-bold'>global</span> and <span class='font-bold'>complete</span> vision of this broad domain. I'm a fast learner and I can <span class='font-bold'>adapt</span> quickly to any kind of project.",
+    "p3": "If you have a question or you are <span class='font-bold'>interested</span> in my profile, feel free to <a class='text-link' href='#contact' >contact me !</a >"
+  },
+  "skills": {
+    "intro": "Here is my <span class='font-bold'>developer toolkit</span>, the <span class='font-bold'>tools</span> and <span class='font-bold'>technologies</span> that I have used the most (hover for details).",
+    "grid": [
+      "Java",
+      "Python",
+      "Linux",
+      "Git",
+      "Docker",
+      "JS",
+      "CSS",
+      "Angular",
+      "PostgreSQL",
+      "GitLab CI",
+      "Spring Boot",
+      "AWS",
+      "Unity",
+      "C"
+    ],
+    "list": [
+      {
+        "name": "Java",
+        "color": "bg-red-500",
+        "src": "./src/img/logo-java.png"
+      },
+      {
+        "name": "Python",
+        "color": "bg-green-500",
+        "src": "./src/img/logo-python.png"
+      },
+      {
+        "name": "Linux",
+        "color": "bg-slate-700",
+        "src": "./src/img/logo-terminal.png"
+      },
+      {
+        "name": "Git",
+        "color": "bg-orange-600",
+        "src": "./src/img/logo-git.png"
+      },
+      {
+        "name": "Docker",
+        "color": "bg-sky-600",
+        "src": "./src/img/logo-docker.png"
+      },
+      {
+        "name": "JS",
+        "color": "bg-yellow-400",
+        "src": "./src/img/logo-js.png"
+      },
+      {
+        "name": "CSS",
+        "color": "bg-blue-500",
+        "src": "./src/img/logo-css.png"
+      },
+      {
+        "name": "Angular",
+        "color": "bg-red-600",
+        "src": "./src/img/logo-angular.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "bg-cyan-700",
+        "src": "./src/img/logo-postgresql.png"
+      },
+      {
+        "name": "GitLab CI",
+        "color": "bg-amber-500",
+        "src": "./src/img/logo-gitlab-ci.png"
+      },
+      {
+        "name": "Spring Boot",
+        "color": "bg-lime-400",
+        "src": "./src/img/logo-spring-boot.png"
+      },
+      {
+        "name": "AWS",
+        "color": "bg-sky-900",
+        "src": "./src/img/logo-aws.png"
+      },
+      {
+        "name": "Unity",
+        "color": "bg-slate-950",
+        "src": "./src/img/logo-unity.png"
+      },
+      {
+        "name": "C",
+        "color": "bg-blue-700",
+        "src": "./src/img/logo-c.png"
+      },
+      {
+        "name": "GH actions",
+        "color": "bg-blue-500",
+        "src": "./src/img/logo-ghactions.png"
+      },
+      {
+        "name": "HTML",
+        "color": "bg-orange-400",
+        "src": "./src/img/logo-html.png"
+      },
+      {
+        "name": "PHP",
+        "color": "bg-violet-400",
+        "src": "./src/img/logo-php.png"
+      },
+      {
+        "name": "Electron",
+        "color": "bg-cyan-300",
+        "src": "./src/img/logo-electron.png"
+      }
+    ]
+  },
+  "certifications": {
+    "intro": "Never stop <span class='font-bold'>learning !</span>",
+    "list": [
+      {
+        "name": "Professional Scrum Developer (PSD 1)",
+        "src": "./src/img/logo-scrum-developer.png"
+      },
+      {
+        "name": "AWS Cloud Practitioner",
+        "src": "./src/img/logo-aws-practitioner.png"
+      },
+      {
+        "name": "Cloud Computing Foundations",
+        "src": "./src/img/logo-duke.png"
+      }
+    ]
+  },
+  "work": {
+    "intro": "Here is a selection of <span class='font-bold'>projects</span> I have worked on. Some of my them are available on my <a class='text-link' href='https://github.com/thomasbachdev' >GitHub</a >.",
+    "projects": [
+      {
+        "name": "Full stack medical application",
+        "description": "<span class='font-bold'>Full stack</span> web app for doctors and nurses to help detect malnutrition in nursing homes. It is a school project developed by a team of 6 using <span class='font-bold'>agile practices</span>. My roles: frontend, DevOps and scrum master. Generated with <span class='font-bold'>JHipster</span>, the application uses <span class='font-bold'>Angular</span> for the frontend and Java Spring Boot for the backend. I used <span class='font-bold'>GitHub actions</span> to create CI/CD pipelines, containerized the application with <span class='font-bold'>Docker</span> and deployed it on an <span class='font-bold'>Azure</span> VM.",
+        "img": "./src/img/nutriwatch.png",
+        "href": "./src/img/nutriwatch.png",
+        "skills": ["Angular", "Spring Boot", "Docker", "GH actions"]
+      },
+      {
+        "name": "Snow and avalanche map",
+        "description": "<span class='font-bold'>Interactive map</span> updated daily displaying data about <span class='font-bold'>snow and avalanches</span>. It provides an overview of the latest <span class='font-bold'>weather conditions</span> and thus possible avalanche risks, helping the users of <a class='text-link' href='https://skitour.fr' >Skitour</a > to prepare for their ski trip in complete safety. The map has been developed with <span class='font-bold'>Leaflet</span> (frontend) and <span class='font-bold'>PHP</span> (backend), by a team of 4 using agile practices.",
+        "img": "./src/img/skitour.png",
+        "href": "https://skitour.fr",
+        "skills": ["PHP", "JS"]
+      },
+      {
+        "name": "Electronic cards test interface",
+        "description": "Complete user interface I made with <span class='font-bold'>Angular</span>, <span class='font-bold'>ElectronJS</span> and <span class='font-bold'>MySQL</span> during a 3 month-<span class='font-bold' >internship</span >, to manage tests of electronic cards that are manufactured by the company. With this software, the user can <span class='font-bold'>launch test scripts</span> on a card with a hardware bench, consult previous test <span class='font-bold'>history</span> with all the stored data, and visualize <span class='font-bold'>graphs and statistics</span> in order to detect potential problems and improve the <span class='font-bold'>engineering process</span>.",
+        "video": "https://www.youtube.com/embed/m5xTpISakEc",
+        "href": "https://www.youtube.com/watch?v=m5xTpISakEc",
+        "skills": ["Angular", "Electron"]
+      },
+      {
+        "name": "DAAM (video game)",
+        "description": "<span class='font-bold'>Video game</span> developed in <span class='font-bold'>Java</span> for a school project, at the end of my 3rd year. The game has been carried out in <span class='font-bold'>3 weeks</span> from scratch by a group of 6 students, under specific <span class='font-bold'>constraints</span> such as the use of <span class='font-bold'>automata</span> and the <span class='font-bold'>MVC structure</span> (Model View Controller).",
+        "video": "https://www.youtube.com/embed/j0RpQHVYBdU",
+        "href": "https://www.youtube.com/watch?v=j0RpQHVYBdU",
+        "skills": ["Java"]
+      },
+      {
+        "name": "Project Robin",
+        "description": "Experimental project using <span class='font-bold'>AI</span> applied to <span class='font-bold'>sound recognition</span> on an embedded device. That was my 4th year end project completed in a few weeks by a team of 3. Using <a class='text-link' href='https://www.edgeimpulse.com/' >EdgeImpulse</a > and the <a class='text-link' href='https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/' >Wio Terminal</a >, our model classified <span class='font-bold'>animal noises</span> and printed out its prediction with probabilities. Very interesting work that made me improve my knowledge of <span class='font-bold'>embedded programming</span> and <span class='font-bold'>AI model training</span>.",
+        "img": "./src/img/project-robin.jpg",
+        "href": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/21-22/03/docs/-/blob/main/report_project_robin.pdf",
+        "skills": ["C"]
+      },
+      {
+        "name": "Contrails.js",
+        "description": "Simple <span class='font-bold'>JavaScript library</span> to create airplane <span class='font-bold'>contrails animation</span>. It's a small project I did to practice and test the canvas feature on a website, but it was quite fun to make and I'm satisfied with the result.",
+        "img": "./src/img/contrails.gif",
+        "href": "https://github.com/thomasbachdev/contrails.js",
+        "skills": ["JS"]
+      }
+    ]
+  },
+  "contact": {
+    "p1": "Any <span class='font-bold'>question</span>, <span class='font-bold'>idea</span> or <span class='font-bold'>job offer</span> ? Feel free to email me at <a href='mailto:thomasbach.contact@gmail.com' class='text-link' >thomasbach.contact@gmail.com</a >.",
+    "p2": "You can also download my <span class='font-bold'>resume</span> (<a href='CV-BACH-EN.pdf' class='text-link' >EN</a >, <a href='CV-BACH-FR.pdf' class='text-link' >FR</a >)"
+  }
+}

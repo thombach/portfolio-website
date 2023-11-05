@@ -11,7 +11,7 @@
     <meta name="author" content="Thomas Bach" />
     <meta
       name="keywords"
-      content="portfolio, thomas, bach, engineer, computer science, developer, informatique, etudiant, ingenieur"
+      content="portfolio, thomas, bach, full, stack, devops, engineer, developer, computer science, developer, informatique, ingenieur"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--- META -->
@@ -47,16 +47,16 @@
           class="flex items-center text-xl leading-6 font-semibold text-slate-700 text-white"
         >
           <ul class="flex flex-row space-x-8">
-            <li class="hidden sm:block hover:text-teal-400">
+            <li class="hidden sm:block hover:primary-text">
               <a href="#about">About</a>
             </li>
-            <li class="hidden sm:block hover:text-teal-400">
+            <li class="hidden sm:block hover:primary-text">
               <a href="#work">Work</a>
             </li>
-            <li class="hidden sm:block hover:text-teal-400">
-              <a href="./CV-BACH-EN.pdf">Resume</a>
+            <li class="hidden sm:block hover:primary-text">
+              <a href="./CV-BACH-FR.pdf">Resume</a>
             </li>
-            <li class="hover:text-teal-400">
+            <li class="hover:primary-text">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -78,20 +78,20 @@
           <filter id="turbulence" x="0" y="0" width="100%" height="100%">
             <feTurbulence
               id="water-filter"
-              numOctaves="3"
+              numOctaves="2"
               seed="2"
               baseFrequency="0.02 0.5"
             ></feTurbulence>
             <feDisplacementMap
-              scale="20"
+              scale="30"
               in="SourceGraphic"
             ></feDisplacementMap>
             <animate
               xlink:href="#water-filter"
               attributeName="baseFrequency"
-              dur="60s"
+              dur="30s"
               keyTimes="0;1"
-              values="0.02 0.08;0.06 0.08"
+              values="0.02 0.1;0.06 0.08"
               repeatCount="indefinite"
             ></animate>
           </filter>
@@ -108,7 +108,7 @@
             <span class="letter-bounce">!</span>
           </h1>
           <h2 class="text-3xl mt-4 text-left">
-            I'm <span class="font-bold text-teal-300">Thomas Bach</span>,
+            I'm <span class="font-bold primary-text">Thomas Bach</span>,
             <span class="typewriter"></span>
           </h2>
           <a href="#contact" class="btn-primary"> 👉 Get in touch </a>
@@ -132,7 +132,7 @@
       <!-- home -->
 
       <div
-        class="flex flex-col justify-start max-w-5xl px-12 pb-24 space-y-24 text-slate-700"
+        class="flex flex-col justify-start max-w-5xl px-12 pb-24 space-y-16 text-slate-700"
       >
         <div id="contrails" class="absolute w-full h-screen left-0 -z-10"></div>
 
@@ -142,52 +142,14 @@
           <div class="mt-6 backdrop-blur-sm bg-white/30">
             <div class="flex justify-center sm:block">
               <img
-              class="w-72 sm:w-72 transition ease-in-out delay-75 hover:scale-105 duration-200 p-6 sm:float-left profile-photo"
-              src="./src/img/thomas-bach.png"
-              alt="Thomas Bach's profile photo"
-            />
+                class="w-72 sm:w-72 transition ease-in-out delay-75 hover:scale-105 duration-200 p-6 sm:float-left profile-photo"
+                src="./src/img/thomas-bach.png"
+                alt="Thomas Bach's profile photo"
+              />
             </div>
-            <p class="sm:mt-6">
-              I love to combine both
-              <span class="font-bold">technology</span> and
-              <span class="font-bold">creativity</span> to create tools and
-              software that will <span class="font-bold">help people</span> in
-              their job and make their life easier. As a good team player and a
-              hard worker, I want to solve complex problems and work on
-              <span class="font-bold">exciting projects</span>. I'm a
-              generalist, and I'm passionate about constantly
-              <span class="font-bold">learning</span> new things in various
-              fields.
-            </p>
-            <p class="mt-4">
-              I have a
-              <span class="font-bold">computer science</span> engineering degree
-              from
-              <a
-                class="font-bold text-underlined-hover text-teal-400"
-                href="https://www.polytech-grenoble.fr/menu-principal/formations/maquettes-et-details-des-enseignements-447694.kjsp?RH=1485271802758"
-                >Polytech</a
-              >, an engineering school based in
-              <span class="font-bold">Grenoble</span> (in the French Alps). Over
-              the courses and the projects I have participated in, I have
-              learned several
-              <span class="font-bold">programming languages</span> and aspects
-              of computer science, which gave me a
-              <span class="font-bold">global</span> and
-              <span class="font-bold">complete</span> vision of this broad
-              domain. I'm a fast learner and I can
-              <span class="font-bold">adapt</span> quickly to any kind of
-              project.
-            </p>
-            <p class="mt-4">
-              If you have a question or you are <span class="font-bold">interested</span> in my profile, feel
-              free to
-              <a
-                class="font-bold text-underlined-hover text-teal-400"
-                href="#contact"
-                >contact me !</a
-              >
-            </p>
+            <p class="sm:mt-6" id="about-p1"></p>
+            <p class="mt-4" id="about-p2"></p>
+            <p class="mt-4" id="about-p3"></p>
           </div>
         </section>
         <!-- about -->
@@ -195,414 +157,47 @@
         <!-- skills and tools -->
         <section id="skills">
           <h3 class="section-title">🔧 Skills</h3>
-          <p class="mt-6 backdrop-blur-sm bg-white/30">
-            Here is my <span class="font-bold">developer toolkit</span>, the
-            <span class="font-bold">tools</span> and
-            <span class="font-bold">technologies</span> that I have used the
-            most (hover for details).
+          <p class="mt-6 backdrop-blur-sm bg-white/30" id="skills-intro">
           </p>
           <div class="flex justify-center mt-6">
             <div
               id="skills-grid"
               class="flex flex-wrap sm:w-[672px] w-[192px] text-white font-extrabold text-sm"
             >
-              <div class="skill-container bg-red-500">
-                <img class="h-12 w-12" src="./src/img/logo-java.png" />
-                <span class="hidden">Java</span>
-              </div>
-              <div class="skill-container bg-green-500">
-                <img class="h-12 w-12" src="./src/img/logo-python.png" />
-                <span class="hidden">Python</span>
-              </div>
-              <div class="skill-container bg-blue-700">
-                <img class="h-12 w-12" src="./src/img/logo-c.png" />
-                <span class="hidden">C</span>
-              </div>
-              <div class="skill-container bg-slate-700">
-                <img class="h-12 w-12" src="./src/img/logo-terminal.png" />
-                <span class="hidden">Linux</span>
-              </div>
-              <div class="skill-container bg-orange-600">
-                <img class="h-12 w-12" src="./src/img/logo-git.png" />
-                <span class="hidden">Git</span>
-              </div>
-              <div class="skill-container bg-sky-400">
-                <img class="h-12 w-12" src="./src/img/logo-vscode.png" />
-                <span class="hidden">VSCode</span>
-              </div>
-              <div class="skill-container bg-sky-600">
-                <img class="h-12 w-12" src="./src/img/logo-docker.png" />
-                <span class="hidden">Docker</span>
-              </div>
-              <div class="skill-container bg-orange-400">
-                <img class="h-12 w-12" src="./src/img/logo-html.png" />
-                <span class="hidden">HTML</span>
-              </div>
-              <div class="skill-container bg-blue-500">
-                <img class="h-12 w-12" src="./src/img/logo-css.png" />
-                <span class="hidden">CSS</span>
-              </div>
-              <div class="skill-container bg-yellow-400">
-                <img class="h-12 w-12" src="./src/img/logo-js.png" />
-                <span class="hidden">JS</span>
-              </div>
-              <div class="skill-container bg-red-600">
-                <img class="h-12 w-12" src="./src/img/logo-angular.png" />
-                <span class="hidden">Angular</span>
-              </div>
-              <div class="skill-container bg-blue-500">
-                <img class="h-12 w-12" src="./src/img/logo-ghactions.png" />
-                <span class="hidden">GH Actions</span>
-              </div>
-              <div class="skill-container bg-cyan-300">
-                <img class="h-12 w-12" src="./src/img/logo-electron.png" />
-                <span class="hidden">Electron</span>
-              </div>
-              <div class="skill-container bg-cyan-700">
-                <img class="h-12 w-12" src="./src/img/logo-mysql.png" />
-                <span class="hidden">MySQL</span>
-              </div>
-            </div>
           </div>
         </section>
         <!-- skills and tools -->
 
+        <!-- certifications -->
+        <section id="certifications">
+          <h3 class="section-title">🎓 Certifications</h3>
+          <p class="mt-6 backdrop-blur-sm bg-white/30" id="certifications-intro">
+          </p>
+          <div class="flex justify-center">
+          <div class="flex flex-wrap sm:w-[672px] w-[192px] mt-6 gap-x-8" id="certifications-list">
+          </div>
+        </section>
+        <!-- certifications -->
+
         <!-- work -->
         <section id="work">
           <h3 class="section-title">🚀 Work</h3>
-          <p class="mt-6">
-            Here is a selection of <span class="font-bold">projects</span> I
-            have worked on. Some of my them are available on my
-            <a
-              class="font-bold text-underlined-hover text-teal-400"
-              href="https://github.com/thomasbachdev"
-              >GitHub</a
-            >.
-          </p>
-          <div class="flex flex-col space-y-20 mt-12">
-            <div class="card hover:scale-105 transition duration-150">
-              <img
-                src="./src/img/nutriwatch.png"
-                class="sm:w-[420px] sm:h-[220px] w-full"
-                alt="Medical app screenshot"
-              />
-
-              <div
-                class="flex flex-col items-center sm:items-start pt-8 sm:pl-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                  <div class="skill-container bg-red-600 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-angular.png" />
-                  </div>
-                  <div class="skill-container bg-red-500 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-java.png" />
-                  </div>
-                  <div class="skill-container bg-sky-600 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-docker.png" />
-                  </div>
-                  <div class="skill-container bg-blue-500 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-ghactions.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">
-                  Full stack medical application
-                </h4>
-
-                <p>
-                  <span class="font-bold">Full stack</span> web app for doctors
-                  and nurses to help detect malnutrition in nursing homes. It is
-                  a school project developed by a team of 6 using
-                  <span class="font-bold">agile practices</span>. My roles:
-                  frontend, DevOps and scrum master. Partly built with
-                  <span class="font-bold">JHipster</span>, the application uses
-                  <span class="font-bold">Angular</span> for the frontend and
-                  Java Spring for the backend. I used
-                  <span class="font-bold">GitHub actions</span> to create CI/CD
-                  pipelines, containerized the application with
-                  <span class="font-bold">Docker</span> and deployed it on an
-                  <span class="font-bold">Azure</span> VM.
-                </p>
-                <a href="./src/img/nutriwatch.png" class="btn-primary mt-8"
-                  >👉 See more</a
-                >
-              </div>
-            </div>
-
-            <div
-              class="card hover:scale-105 sm:flex-row-reverse transition duration-150"
-            >
-              <img
-                src="./src/img/skitour.png"
-                class="sm:w-[420px] sm:h-[220px] w-full"
-                alt="Skitour map screenshot"
-              />
-              <div
-                class="flex flex-col items-center sm:items-end pt-8 sm:pr-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div
-                    class="skill-container bg-violet-400 rounded-full h-7 w-7"
-                  >
-                    <img class="h-6 w-6" src="./src/img/logo-php.png" />
-                  </div>
-                  <div
-                    class="skill-container bg-yellow-400 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-js.png" />
-                  </div>
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">
-                  Snow and avalanche map
-                </h4>
-                <p>
-                  <span class="font-bold">Interactive map</span> updated daily
-                  displaying data about
-                  <span class="font-bold">snow and avalanches</span>. It
-                  provides an overview of the latest
-                  <span class="font-bold">weather conditions</span> and thus
-                  possible avalanche risks, helping the users of
-                  <a
-                    class="font-bold text-underlined-hover text-teal-400"
-                    href="https://skitour.fr"
-                    >Skitour</a
-                  >
-                  to prepare for their ski trip in complete safety. The map has
-                  been developed with
-                  <span class="font-bold">Leaflet</span> (frontend) and
-                  <span class="font-bold">PHP</span> (backend), by a team of 4
-                  using agile practices.
-                </p>
-                <a href="https://skitour.fr" class="btn-primary"
-                  >👉 See more
-                </a>
-              </div>
-            </div>
-
-            <div class="card hover:scale-105 transition duration-150">
-              <div>
-                <iframe
-                  class="sm:w-[420px] sm:h-[280px] w-full"
-                  src="https://www.youtube.com/embed/m5xTpISakEc"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-
-              <div
-                class="flex flex-col items-center sm:items-start pt-8 sm:pl-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                  <div class="skill-container bg-red-600 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-angular.png" />
-                  </div>
-                  <div class="skill-container bg-cyan-300 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-electron.png" />
-                  </div>
-                  <div class="skill-container bg-cyan-700 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-mysql.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">
-                  Electronic cards test manager
-                </h4>
-
-                <p>
-                  Complete user interface I made with
-                  <span class="font-bold">Angular</span>,
-                  <span class="font-bold">ElectronJS</span> and
-                  <span class="font-bold">MySQL</span> during a 3 month-<span
-                    class="font-bold"
-                    >internship</span
-                  >, to manage tests of electronic cards that are manufactured
-                  by the company. With this software, the user can
-                  <span class="font-bold">launch test scripts</span> on a card
-                  with a hardware bench, consult previous test
-                  <span class="font-bold">history</span> with all the stored
-                  data, and visualize
-                  <span class="font-bold">graphs and statistics</span> in order
-                  to detect potential problems and improve the
-                  <span class="font-bold">engineering process</span>.
-                </p>
-                <a
-                  href="https://www.youtube.com/watch?v=m5xTpISakEc"
-                  class="btn-primary mt-8"
-                  >👉 See more</a
-                >
-              </div>
-            </div>
-
-            <div
-              class="card hover:scale-105 sm:flex-row-reverse transition duration-150"
-            >
-              <div>
-                <iframe
-                  class="sm:w-[420px] sm:h-[280px] w-full"
-                  src="https://www.youtube.com/embed/j0RpQHVYBdU"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div
-                class="flex flex-col items-center sm:items-end pt-8 sm:pr-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div class="skill-container bg-red-500 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-java.png" />
-                  </div>
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">
-                  DAAM (video game)
-                </h4>
-                <p>
-                  <span class="font-bold">Video game</span> developed in
-                  <span class="font-bold">Java</span> for a school project, at
-                  the end of my 3rd year. The game has been carried out in
-                  <span class="font-bold">3 weeks</span> from scratch by a group
-                  of 6 students, under specific
-                  <span class="font-bold">constraints</span> such as the use of
-                  <span class="font-bold">automata</span> and the
-                  <span class="font-bold">MVC structure</span> (Model View
-                  Controller).
-                </p>
-                <a
-                  href="https://www.youtube.com/watch?v=j0RpQHVYBdU"
-                  class="btn-primary"
-                  >👉 See more
-                </a>
-              </div>
-            </div>
-
-            <div class="card hover:scale-105 transition duration-150">
-              <img
-                src="./src/img/project-robin.jpg"
-                class="sm:w-[420px] sm:h-[280px] w-full"
-                alt="Project Robin's photo composition"
-              />
-              <div
-                class="flex flex-col items-center sm:items-start pt-8 sm:pl-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                  <div class="skill-container bg-blue-700 rounded-full h-7 w-7">
-                    <img class="h-4 w-4" src="./src/img/logo-c.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">Project Robin</h4>
-                <p>
-                  Experimental project using
-                  <span class="font-bold">AI</span> applied to
-                  <span class="font-bold">sound recognition</span> on an
-                  embedded device. That was my 4th year end project completed in
-                  a few weeks by a team of 3. Using
-                  <a
-                    class="font-bold text-underlined-hover text-teal-400"
-                    href="https://www.edgeimpulse.com/"
-                    >EdgeImpulse</a
-                  >
-                  and the
-                  <a
-                    class="font-bold text-underlined-hover text-teal-400"
-                    href="https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/"
-                    >Wio Terminal</a
-                  >, our model classified
-                  <span class="font-bold">animal noises</span> and printed out
-                  its prediction with probabilities. Very interesting work that
-                  made me improve my knowledge of
-                  <span class="font-bold">embedded programming</span> and
-                  <span class="font-bold">AI model training</span>.
-                </p>
-                <a
-                  href="https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/21-22/03/docs/-/blob/main/report_project_robin.pdf"
-                  class="btn-primary"
-                  >👉 See more
-                </a>
-              </div>
-            </div>
-
-            <div
-              class="card hover:scale-105 sm:flex-row-reverse transition duration-150"
-            >
-              <img
-                src="./src/img/contrails.gif"
-                class="sm:w-[420px] sm:h-[280px] w-full"
-                alt="Project Robin's photo composition"
-              />
-              <div
-                class="flex flex-col items-center sm:items-end pt-8 sm:pr-8 sm:pt-0 space-y-3"
-              >
-                <div class="flex flex-row gap-x-2">
-                  <div
-                    class="skill-container bg-yellow-400 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-js.png" />
-                  </div>
-                  <div
-                    class="skill-container bg-orange-600 rounded-full h-7 w-7"
-                  >
-                    <img class="h-4 w-4" src="./src/img/logo-git.png" />
-                  </div>
-                </div>
-                <h4 class="text-2xl font-bold text-teal-400">Contrails.js</h4>
-                <p>
-                  Simple
-                  <span class="font-bold">JavaScript library</span> to create
-                  airplane <span class="font-bold">contrails animation</span>.
-                  It's a small project I did to practice and test the canvas
-                  feature on a website, but it was quite fun to make and I'm
-                  satisfied with the result.
-                </p>
-                <a
-                  href="https://github.com/thomasbachdev/contrails.js"
-                  class="btn-primary"
-                  >👉 See more
-                </a>
-              </div>
-            </div>
-          </div>
+          <p class="mt-6" id="work-intro"></p>
+          <div class="flex flex-col space-y-20 mt-12" id="work-projects"></div>
         </section>
         <!-- work -->
 
         <!-- contact -->
         <section id="contact">
           <h3 class="section-title">📨 Get in touch</h3>
-          <div class="flex sm:flex-row flex-col">
+          <div class="flex sm:flex-row flex-col mt-6">
             <div class="sm:w-3/5 sm:mr-16">
-              <p class="mt-6 text-left">
+              <p class="text-left">
                 Any <span class="font-bold">question</span>,
                 <span class="font-bold">idea</span> or
                 <span class="font-bold">job offer</span> ? Feel free to email me
                 at
-                <a
-                  href="mailto:thomasbach.contact@gmail.com"
-                  class="font-bold text-underlined-hover text-teal-400"
+                <a href="mailto:thomasbach.contact@gmail.com" class="text-link"
                   >thomasbach.contact@gmail.com</a
                 >.
               </p>
@@ -610,27 +205,15 @@
                 You can also download my
                 <span class="font-bold">resume</span> (<a
                   href="CV-BACH-EN.pdf"
-                  class="font-bold text-underlined-hover text-teal-400"
+                  class="text-link"
                   >EN</a
-                >,
-                <a
-                  href="CV-BACH-FR.pdf"
-                  class="font-bold text-underlined-hover text-teal-400"
-                  >FR</a
-                >) and a <span class="font-bold">complement</span> (<a
-                  href="resume-complement-BACH.pdf"
-                  class="font-bold text-underlined-hover text-teal-400"
-                  >complement-EN</a
-                >,
-                <a
-                  href="CV-complement-BACH.pdf"
-                  class="font-bold text-underlined-hover text-teal-400"
-                  >complement-FR</a
-                >) giving more information about my projects and my education.
+                >, <a href="CV-BACH-FR.pdf" class="text-link">FR</a>)
               </p>
             </div>
-            <div class="flex flex-col mt-8 space-y-6">
-              <p class="flex font-bold text-xl justify-center">Find me also on</p>
+            <div class="flex flex-col space-y-6">
+              <p class="flex font-bold text-xl justify-center">
+                Find me also on
+              </p>
               <div class="flex flex-row gap-x-6 justify-center">
                 <a href="https://linkedin.com/in/thomasbachpro">
                   <button
@@ -691,9 +274,8 @@
 
     <button
       id="to-top-button"
-      onclick="goToTop()"
       title="Go To Top"
-      class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-teal-400 hover:bg-teal-500 active:bg-teal-600 text-white text-3xl font-bold"
+      class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md primary hover:primary-dark active:primary-dark text-white text-3xl font-bold"
     >
       &uarr;
     </button>
@@ -756,15 +338,14 @@
             Made with <span class="inline-block animate-bounce">❤️</span> by
             Thomas Bach
           </p>
-          <p>© 2022 - 2023</p>
+          <p>© 2023 - 2024</p>
         </div>
       </div>
     </footer>
     <!-- footer -->
 
     <!-- scripts -->
-    <script src="./src/js/main.js"></script>
-    <script type="module" src="./src/js/contrails.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
     <!-- scripts -->
   </body>
   <!-- body -->
