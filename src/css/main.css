@@ -128,6 +128,10 @@
     @apply flex flex-col w-24 h-24 justify-center items-center space-y-2 transition duration-150;
   }
 
+  .certif-container {
+    @apply flex flex-col w-44 h-44 justify-center items-center text-center space-y-4;
+  }
+
   .text-link {
     @apply inline-block relative before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-1 before:transition-all before:duration-300 before:primary hover:before:w-full font-bold primary-text;
   }

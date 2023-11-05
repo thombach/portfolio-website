@@ -12,6 +12,7 @@ document.cookie = "SameSite=Lax";
 function main() {
   setAboutData();
   setSkillsData();
+  setCertificationsData();
   setWorkData();
 
   // Handle hovering the skills grid
@@ -38,6 +39,17 @@ function setSkillsData() {
       <span class="hidden">${skillData.name}</span>
     </div>`;
     }
+  }
+}
+
+function setCertificationsData() {
+  document.getElementById("certifications-intro").innerHTML = data.certifications.intro;
+  let list = document.getElementById("certifications-list");
+  for (const certif of data.certifications.list) {
+      list.innerHTML += `<div class="certif-container">
+      <img class="h-24 w-24 hover:scale-105 transition duration-150" src="${certif.src}" />
+      <span class="font-bold text-sm">${certif.name}</span>
+    </div>`;
   }
 }
 
