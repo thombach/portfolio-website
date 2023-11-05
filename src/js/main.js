@@ -58,7 +58,7 @@ function setWorkData() {
       class="flex flex-col items-center sm:items-start pt-8 sm:px-8 sm:pt-0 space-y-3"
     >
       <div class="flex flex-row gap-x-2">${skillsHtml}</div>
-      <h4 class="text-2xl font-bold text-teal-400">${project.name}</h4>
+      <h4 class="text-2xl font-bold primary-text">${project.name}</h4>
       <p>${project.description}</p>
       <a href="${project.href}" class="btn-primary mt-8"
         >👉 See more</a
