@@ -101,7 +101,7 @@
   }
 
   .btn-primary {
-    @apply py-1 px-4 mt-4 bg-teal-400 text-white font-bold rounded-md shadow-lg hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-75 w-fit transition ease-in-out delay-75 hover:scale-105 duration-200;
+    @apply py-1 px-4 mt-4 bg-teal-400 text-white font-bold rounded-md shadow-lg hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-75 w-fit transition ease-in-out duration-200;
   }
 
   .card {
@@ -116,7 +116,15 @@
     @apply flex flex-col w-24 h-24 justify-center items-center space-y-2 transition duration-150;
   }
 
-  .text-underlined-hover {
-    @apply inline-block relative before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-1 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full;
+  .text-link {
+    @apply inline-block relative before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-1 before:transition-all before:duration-300 before:bg-teal-400 hover:before:w-full font-bold text-teal-400;
+  }
+
+  .tooltip {
+    @apply invisible absolute rounded shadow-lg p-1 bg-slate-700 text-xs text-white mt-8;
+  }
+  
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50 -mt-14
   }
 }
