@@ -117,7 +117,7 @@
   }
 
   .card {
-    @apply flex flex-col sm:flex-row justify-center items-center shadow-lg p-8 ring-1 ring-inset ring-black/10;
+    @apply flex flex-col sm:flex-row justify-center items-center shadow-md p-8 ring-1 ring-inset ring-black/10;
   }
 
   .section-title {
@@ -142,5 +142,9 @@
   
   .has-tooltip:hover .tooltip {
     @apply visible z-50 -mt-14
+  }
+
+  .logo {
+    @apply transition ease-in-out hover:scale-110 duration-150
   }
 }
