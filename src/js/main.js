@@ -62,9 +62,9 @@ function setWorkData() {
   for (const project of projects) {
     const skillsHtml = buildProjectSkills(list, project.skills);
     const mediaHtml = buildProjectMedia(project);
-    projectsHtml.innerHTML += `<div class="card hover:scale-105 ${
+    projectsHtml.innerHTML += `<div class="card ${
       reverse ? "sm:flex-row-reverse" : ""
-    } transition duration-150">
+    }">
     ${mediaHtml}
     <div
       class="flex flex-col items-center sm:items-start pt-8 sm:px-8 sm:pt-0 space-y-3"
